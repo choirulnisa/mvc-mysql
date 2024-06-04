@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.chat-dialog {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 450px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-bubble {
+    max-width: 70%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    overflow-wrap: break-word; /* Menangani kata yang panjang */
+    clear: both; /* Membersihkan float */
+}
+
+.sent {
+    background-color: #d7c3f3; /* Warna untuk bubble pengirim */
+    float: right; /* Mengatur bubble pengirim ke kanan */
+}
+
+.received {
+    background-color: #FFFFFF; /* Warna untuk bubble penerima */
+    float: left; /* Mengatur bubble penerima ke kiri */
+}
+
+/* Menambahkan efek bayangan pada bubble */
+.chat-bubble {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timestamp {
+    font-size:xx-small; /* Atau ukuran font yang Anda inginkan */
+    color: rgb(194, 194, 194); /* Atau warna lain yang sesuai */
+}
